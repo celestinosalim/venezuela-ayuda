@@ -14,7 +14,6 @@ export default function GoogleTranslate() {
         {
           pageLanguage: "es",
           includedLanguages: "es,en,pt,fr,it,de,zh-CN,ar",
-          layout: window.google.translate.TranslateElement.InlineLayout.SIMPLE,
           autoDisplay: false,
         },
         "google_translate_element"
