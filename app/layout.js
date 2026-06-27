@@ -21,7 +21,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="es" className={sans.variable}>
+    <html lang="es" className={sans.variable} suppressHydrationWarning>
       <body>
         {children}
         <Analytics />
