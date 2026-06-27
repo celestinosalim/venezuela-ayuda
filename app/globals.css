@@ -153,7 +153,8 @@ footer{color:var(--gris);font-size:12px;padding:32px 0 56px;line-height:1.75;tex
 #goog-gt-tt,.goog-te-balloon-frame{display:none !important}
 .goog-text-highlight{background:none !important;box-shadow:none !important}
 .goog-te-gadget{font-size:0 !important;color:transparent !important;line-height:0 !important}
-.goog-logo-link,.goog-te-gadget img{display:none !important}
+.goog-te-gadget>span,.goog-te-gadget>div>span{display:none !important}
+.goog-logo-link,.goog-te-gadget img,.goog-te-gadget-icon{display:none !important}
 .goog-te-gadget .goog-te-combo{font-family:inherit;font-size:12px;line-height:1.2;color:#fff;
   background:transparent;border:1px solid rgba(255,255,255,.35);border-radius:6px;padding:4px 6px;
   cursor:pointer;appearance:auto;outline:none;transition:border-color .15s;margin:0}
