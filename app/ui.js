@@ -21,11 +21,15 @@ const DROP_REGION = {
   "Carlow Park": "Sweetwater",
   "Food For The Poor": "Broward",
   "All Star Training Center": "Broward",
+  "Ciudad de Miramar": "Broward",
   "Work Color Signs": "Orlando",
+  "Sandy Perrone Park": "Tampa",
   "Caracas Bakery — Biscayne": "Miami",
+  "Nu Stadium": "Miami",
+  "Miami-Dade Tax Collector": "Miami",
   "Fundación Juntos": "Bogotá",
 };
-const REGION_ORDER = ["Doral", "Sweetwater", "Broward", "Orlando", "Miami", "Bogotá"];
+const REGION_ORDER = ["Doral", "Sweetwater", "Broward", "Orlando", "Tampa", "Miami", "Bogotá"];
 function dropRegion(o) {
   const k = Object.keys(DROP_REGION).find((k) => o.n.startsWith(k));
   return k ? DROP_REGION[k] : "Otras";
@@ -201,6 +205,7 @@ export default function Ui({ seismic, health, updatedAt }) {
               </>
             )}
           </div>
+          {t.quakeContext && <p className="qcontext">{t.quakeContext}</p>}
         </section>
 
         {/* TRUST / ANTI-SCAM (education) */}
